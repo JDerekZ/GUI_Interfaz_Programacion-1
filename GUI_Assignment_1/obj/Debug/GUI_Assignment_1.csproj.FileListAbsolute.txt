@@ -1,0 +1,12 @@
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\bin\Debug\GUI_Assignment_1.exe.config
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\bin\Debug\GUI_Assignment_1.exe
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\bin\Debug\GUI_Assignment_1.pdb
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\obj\Debug\GUI_Assignment_1.csproj.AssemblyReference.cache
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\obj\Debug\GUI_Assignment_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\obj\Debug\GUI_Assignment_1.FrmLogin.resources
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\obj\Debug\GUI_Assignment_1.FrmHome.resources
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\obj\Debug\GUI_Assignment_1.Properties.Resources.resources
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\obj\Debug\GUI_Assignment_1.csproj.GenerateResource.cache
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\obj\Debug\GUI_Assignment_1.csproj.CoreCompileInputs.cache
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\obj\Debug\GUI_Assignment_1.exe
+C:\Users\JDerek\Desktop\GUI\GUI_Assignment_1\GUI_Assignment_1\obj\Debug\GUI_Assignment_1.pdb
