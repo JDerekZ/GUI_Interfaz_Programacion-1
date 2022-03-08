@@ -8,9 +8,10 @@ namespace GUI_Assignment_1
 {
     public class Repost
     {
-        public static Repost Instancia {get;} = new Repost();
+        public static Repost Instancia { get; } = new Repost();
 
-        public FrmLogin loginScreen {get;set;} = new FrmLogin();
+        
+
 
         public FrmHome homeScreen {get;set;} = new FrmHome();
 

@@ -8,6 +8,8 @@ namespace GUI_Assignment_1
 {
     internal static class Program
     {
+        
+
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>

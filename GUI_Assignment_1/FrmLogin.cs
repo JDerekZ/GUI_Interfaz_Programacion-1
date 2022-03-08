@@ -10,17 +10,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
 namespace GUI_Assignment_1
 {
     public partial class FrmLogin : Form
     {
 
-        private FrmHome homeScreen;
-        
+        private Repost repository = new Repost();
+
         public FrmLogin()
         {
             InitializeComponent();
-            homeScreen = new FrmHome();
+            
         }
 
         private SqlConnection connection = new SqlConnection("server = LAPTOP-H3RK1BM6\\SQLEXPRESS ; database = Persons ; INTEGRATED SECURITY = true");
@@ -37,10 +38,22 @@ namespace GUI_Assignment_1
 
             if (reader.Read())
             {
-                homeScreen.Show();
+
+                MessageBox.Show("Inicio de sesión exitoso");
+                repository.homeScreen.Show();
                 connection.Close();
-                
+                this.Hide();
             }
+            else
+            {
+                MessageBox.Show("Datos Incorrectos \nAsegúrese de Introducir correctamente el usuario y/o contraseña");
+                connection.Close();
+            }
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
 
         }
     }

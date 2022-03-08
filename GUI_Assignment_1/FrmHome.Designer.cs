@@ -30,15 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.TblMainHome = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnActualizar = new System.Windows.Forms.Button();
             this.TbxNewPassword = new System.Windows.Forms.TextBox();
             this.LblWelcome = new System.Windows.Forms.Label();
             this.Lblinfo = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.TbxNewUser = new System.Windows.Forms.TextBox();
-            this.BtnGuardar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BtnGuardar = new System.Windows.Forms.Button();
             this.TblMainHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -49,15 +50,16 @@
             this.TblMainHome.ColumnCount = 2;
             this.TblMainHome.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TblMainHome.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TblMainHome.Controls.Add(this.BtnActualizar, 0, 4);
             this.TblMainHome.Controls.Add(this.TbxNewPassword, 1, 3);
             this.TblMainHome.Controls.Add(this.LblWelcome, 0, 0);
             this.TblMainHome.Controls.Add(this.Lblinfo, 0, 1);
             this.TblMainHome.Controls.Add(this.lblUser, 0, 2);
             this.TblMainHome.Controls.Add(this.lblPassword, 0, 3);
             this.TblMainHome.Controls.Add(this.TbxNewUser, 1, 2);
-            this.TblMainHome.Controls.Add(this.BtnGuardar, 0, 4);
             this.TblMainHome.Controls.Add(this.dataGridView1, 0, 5);
             this.TblMainHome.Controls.Add(this.label1, 0, 6);
+            this.TblMainHome.Controls.Add(this.BtnGuardar, 1, 4);
             this.TblMainHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TblMainHome.Location = new System.Drawing.Point(0, 0);
             this.TblMainHome.Name = "TblMainHome";
@@ -69,8 +71,24 @@
             this.TblMainHome.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.08451F));
             this.TblMainHome.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.23944F));
             this.TblMainHome.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.323944F));
+            this.TblMainHome.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.TblMainHome.Size = new System.Drawing.Size(515, 355);
             this.TblMainHome.TabIndex = 0;
+            // 
+            // BtnActualizar
+            // 
+            this.BtnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnActualizar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnActualizar.Font = new System.Drawing.Font("Torque Sense", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActualizar.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.BtnActualizar.Location = new System.Drawing.Point(155, 182);
+            this.BtnActualizar.Name = "BtnActualizar";
+            this.BtnActualizar.Size = new System.Drawing.Size(99, 25);
+            this.BtnActualizar.TabIndex = 7;
+            this.BtnActualizar.Text = "Actualizar";
+            this.BtnActualizar.UseVisualStyleBackColor = false;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // TbxNewPassword
             // 
@@ -103,11 +121,11 @@
             this.Lblinfo.AutoSize = true;
             this.TblMainHome.SetColumnSpan(this.Lblinfo, 2);
             this.Lblinfo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Lblinfo.Location = new System.Drawing.Point(116, 64);
+            this.Lblinfo.Location = new System.Drawing.Point(114, 64);
             this.Lblinfo.Name = "Lblinfo";
-            this.Lblinfo.Size = new System.Drawing.Size(282, 13);
+            this.Lblinfo.Size = new System.Drawing.Size(287, 13);
             this.Lblinfo.TabIndex = 1;
-            this.Lblinfo.Text = "*Complete el formulario para poder registrarse en el sitema*";
+            this.Lblinfo.Text = "*Complete el formulario para poder registrarse en el sistema*";
             this.Lblinfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblUser
@@ -147,20 +165,20 @@
             this.TbxNewUser.Size = new System.Drawing.Size(138, 20);
             this.TbxNewUser.TabIndex = 4;
             // 
-            // BtnGuardar
+            // dataGridView1
             // 
-            this.BtnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnGuardar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.TblMainHome.SetColumnSpan(this.BtnGuardar, 2);
-            this.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnGuardar.Font = new System.Drawing.Font("Torque Sense", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuardar.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.BtnGuardar.Location = new System.Drawing.Point(208, 182);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(99, 25);
-            this.BtnGuardar.TabIndex = 6;
-            this.BtnGuardar.Text = "Guardar";
-            this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TblMainHome.SetColumnSpan(this.dataGridView1, 2);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(40, 213);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(40, 3, 40, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(435, 112);
+            this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -177,19 +195,20 @@
             this.label1.Text = "*↑↑ Usuarios Registrados Actualmente ↑↑*";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // dataGridView1
+            // BtnGuardar
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TblMainHome.SetColumnSpan(this.dataGridView1, 2);
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 213);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(40, 3, 40, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(435, 112);
-            this.dataGridView1.TabIndex = 7;
+            this.BtnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnGuardar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnGuardar.Font = new System.Drawing.Font("Torque Sense", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuardar.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.BtnGuardar.Location = new System.Drawing.Point(260, 182);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(99, 25);
+            this.BtnGuardar.TabIndex = 6;
+            this.BtnGuardar.Text = "Guardar";
+            this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // FrmHome
             // 
@@ -223,6 +242,7 @@
         private System.Windows.Forms.TextBox TbxNewUser;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
